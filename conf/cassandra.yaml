@@ -50,6 +50,7 @@ allocate_tokens_for_local_replication_factor: 3
 # initial_token:
 
 # May either be "true" or "false" to enable globally
+# хинты
 hinted_handoff_enabled: true
 
 # When hinted_handoff_enabled is true, a black list of data centers that will not
@@ -325,6 +326,7 @@ credentials_validity: 2000ms
 # OrderPreservingPartitioner have been included for backward compatibility only.
 # For new clusters, you should NOT change this value.
 #
+# Можно написать свое партиционирование
 partitioner: org.apache.cassandra.dht.Murmur3Partitioner
 
 # Directories where Cassandra should store data on disk. If multiple
@@ -500,6 +502,7 @@ key_cache_save_period: 4h
 #
 # Default value is 0, to disable row caching.
 # Min unit: MiB
+# Есть слайд про него
 row_cache_size: 0MiB
 
 # Duration in seconds after which Cassandra should save the row cache.
